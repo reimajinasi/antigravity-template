@@ -1,0 +1,28 @@
+# Antigravity Template - Non-Coding Optimized Gitignore
+# Optimized for Git Diff and Document Tracking
+
+# --- AI & Agent Logs ---
+.gemini/
+.agent/user/user-profile.md
+! .agent/user/user-profile.md.example
+
+# --- OS & System Trash ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.log
+
+# --- Project Factory Tracking ---
+# We keep DOCS/ and knowledge-base/ UNIGNORED to support Git Diff
+# only ignore real temporary environment files
+.env
+.env.*
+
+# --- Optional: Ignore large binary files if needed ---
+# *.pdf
+# *.docx
+# *.xlsx
