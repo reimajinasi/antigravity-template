@@ -19,7 +19,7 @@ This workflow generates a new project directory on the Desktop, complete with th
 1. **Phase 0: Project Discovery & Init**:
    - **Action**: Tanyakan nama project kepada user.
    - **Directory Creation**: Buat folder baru di dalam direktori `exports/` lokal (`./exports/[project-name]`).
-   - Agent mengecek direktori `knowledge-base/` template dan membaca [file-index.md](file:///Users/eriksupit/Desktop/antigravity-template/knowledge-base/file-index.md).
+   - **Navigation Check**: Agent WAJIB membaca [system-index.md](file:///Users/eriksupit/Desktop/antigravity-template/system-index.md) di root untuk memahami peta navigasi sistem.
    - **Skill Preparation**: Salin folder `.agent/skills/` dari template ke `exports/[project-name]/DOCS/skills/`.
    - **Knowledge Base Prep**: Salin folder `knowledge-base/` dari template ke `exports/[project-name]/DOCS/knowledge-base/`.
    - // turbo
@@ -64,13 +64,14 @@ This workflow generates a new project directory on the Desktop, complete with th
 8. **Phase 7: Physical Export & Clean Boot**:
    - **Dynamic Documentation**: Sesuai protokol orkestrasi, Orchestrator memanggil [editor.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agents/editor.md) untuk men-generate `DOCS/README.md` yang merangkum visi proyek, struktur tim agen, dan panduan operasional awal berdasarkan `personal-context.md`.
    - // turbo
-    - **Action**: Salin/Pindah folder dari `exports/[project-name]` ke `~/Desktop/[project-name]`.
-    - **Installer Injection**: Salin `init.md` (Workflow /init) ke folder `.agent/workflows/` proyek di Desktop.
-    - // turbo
-    - **Git Action**: `git add . && git commit -m "chore: finalize project factory export to desktop with /init workflow"`
-    - **Cleanup Instruction**: User/Agent di project baru **WAJIB** menjalankan perintah `/init` untuk melakukan sinkronisasi dan menghapus jejak factory (`DOCS/`, `factory-status.json`).
-    - **Final Polish**: Sesuai protokol, Orchestrator memanggil [editor.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agents/editor.md) untuk standarisasi linguistik.
-    - **New Session Protocol**: Instruksikan user secara eksplisit untuk:
+   - **Action**: Salin/Pindah folder dari `exports/[project-name]` ke `~/Desktop/[project-name]`.
+   - **System Mapping**: Suntikkan [system-index.md](file:///Users/eriksupit/Desktop/antigravity-template/system-index.md) ke root folder proyek di Desktop.
+   - **Installer Injection**: Salin `init.md` (Workflow /init) ke folder `.agent/workflows/` proyek di Desktop.
+   - // turbo
+   - **Git Action**: `git add . && git commit -m "chore: finalize project factory export to desktop with /init workflow"`
+   - **Cleanup Instruction**: User/Agent di project baru **WAJIB** menjalankan perintah `/init` untuk melakukan sinkronisasi dan menghapus jejak factory (`DOCS/`, `factory-status.json`).
+   - **Final Polish**: Sesuai protokol, Orchestrator memanggil [editor.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agents/editor.md) untuk standarisasi linguistik.
+   - **New Session Protocol**: Instruksikan user secara eksplisit untuk:
      1. Menutup seluruh dokumen yang terbuka.
      2. **close folder proyek**, untuk sinkronisasi struktur directory.
      3. **open lagi folder proyek**, struktur directory baru terbentk (refresh file explorer).
