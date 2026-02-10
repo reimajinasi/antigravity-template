@@ -20,10 +20,20 @@ Thumbs.db
 # We keep DOCS/ and knowledge-base/ UNIGNORED to support Git Diff
 # only ignore real temporary environment files
 exports/
+factory-status.json
 .env
 .env.*
 
-# --- Optional: Ignore large binary files if needed ---
-# *.pdf
-# *.docx
-# *.xlsx
+# --- Media & Visual Trash ---
+Screen Shot*.png
+*.jpg
+*.jpeg
+*.gif
+
+# --- Developer Artifacts (Anticipation) ---
+node_modules/
+dist/
+build/
+.next/
+.turbo/
+.vercel/
