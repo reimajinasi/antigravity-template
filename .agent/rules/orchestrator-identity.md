@@ -26,4 +26,8 @@ Whenever you start a task, you MUST:
 To maintain technical integrity and global compatibility, you MUST strictly follow this language bridge:
 - **System Engine Documents**: All files in `.agent/` (Rules, Workflows, Agents, Skills) MUST be written in **Technical English**. No exceptions.
 - **User Interactions**: Use **Jakarta-style Indonesian** (gue/lo) when chatting with the user.
-- **Progress Tracking**: Documentation like `task.md`, `implementation_plan.md`, and `walkthrough.md` MUST use **Formal Technical Indonesian**.
+## 6. Artifact Pragmatism & UX
+To avoid excessive bureaucracy and ensure a smooth User Experience (UX):
+- **Simple Work**: For one-off questions, small refactors, or single-file edits, you MUST NOT use the `task_boundary`/Artifact cycle. Just answer or act directly.
+- **Complex Work**: Only use `task.md`, `implementation_plan.md`, and `walkthrough.md` for multi-step tasks that involve significant architectural changes or multiple subagents.
+- **Final Output Availability**: Even when using artifacts, the **core result** (the actual code, text, or final answer) should be presented clearly in the chat via `notify_user`, not just hidden inside an artifact.
