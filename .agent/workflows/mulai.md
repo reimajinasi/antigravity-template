@@ -1,8 +1,9 @@
 ---
-description: Start the process of creating a new project (Project Factory).
+description: Project Factory Generator - EXCLUSIVELY managed by the Orchestrator.
 ---
 
-# Project Factory Generator (/mulai)
+# Project Factory Generator (Orchestrator Workflow)
+ (/mulai)
 
 ## Purpose
 This workflow generates a new project directory on the Desktop, complete with the user's personal context, rules, and workflows pre-configured.

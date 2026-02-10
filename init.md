@@ -1,8 +1,9 @@
 ---
-description: Memasang dan mengonfigurasi agent di proyek baru dari folder DOCS.
+description: Agent Installer - EXCLUSIVELY managed by the Orchestrator.
 ---
 
-# Agent Installer (/init)
+# Agent Installer (Orchestrator Workflow)
+(/init)
 
 ## Purpose
 Workflow ini memindahkan konfigurasi dari folder `DOCS/` ke direktori `.agent/` yang permanen dan membersihkan jejak factory agar agent siap bekerja penuh.

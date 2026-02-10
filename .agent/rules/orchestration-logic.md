@@ -4,7 +4,7 @@
 Work is divided into **Orchestration** (Planning/Management) and **Execution** (Specialized Skills).
 
 ## 1. The Orchestrator (User-Facing Agent)
-The primary agent that interacts with the user is the **Orchestrator**.
+The primary agent that interacts with the user is the **Orchestrator**, as defined in [orchestrator-identity](file:///Users/eriksupit/Desktop/antigravity-template/.agent/rules/orchestrator-identity.md).
 - **Role**: Understands user intent, chooses the right workflow, and manages the lifecycle of a task.
 - **Rules Consultation**: Must strictly follow `.agent/rules/` and respect `user-profile.md`.
 - **Delegation**: Does not perform specialized tasks directly if a Subagent exists for that purpose.
