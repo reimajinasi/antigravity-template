@@ -57,7 +57,8 @@ This workflow generates a new project directory on the Desktop, complete with th
    - Output: `DOCS/agents/`.
 7. **Phase 5b: Skill Forging (Contextual Tools)**:
    - **Action**: Untuk setiap Subagent baru, Orchestrator harus men-generate skill spesifik menggunakan [skill-template.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skill-template.md).
-   - **Focus**: Skill harus mencerminkan "Identity & Voice" proyek (misal: "Sarcastic Tone Engine" untuk proyek konverter gaya bahasa).
+   - **Focus**: Skill harus mencerminkan "Identity & Voice" proyek.
+   - **MANDATORY**: Content MUST be written in **ENGLISH**.
    - Output: `DOCS/skills/[skill-name]/SKILL.md`.
 8. **Phase 5c: Registry Sync & Logic Update**:
    - **Action**: Update tabel **Agent-to-Skill Registry** di `DOCS/rules/orchestration-logic.md` agar mencantumkan Subagent baru dan Skill kontekstual yang baru dibuat.
@@ -66,6 +67,7 @@ This workflow generates a new project directory on the Desktop, complete with th
    - **Git Action**: `git add . && git commit -m "feat: generate contextual agents, skills, and update orchestration registry"`
 9. **Phase 6: Final Audit & Validation**:
    - **Delegation Protocol**: Orchestrator mendelegasikan validasi akhir kepada [auditor.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agents/auditor.md).
+   - **Language Audit**: Auditor WAJIB memastikan semua file di `DOCS/` (Rules, Agents, Skills) menggunakan **Bahasa Inggris**. Jika ditemukan Bahasa Indonesia, instruksikan perbaikan segera.
    - Re-check interkonektivitas antar semua file di folder `exports/`.
    - Gunakan skill [context-audit](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/context-audit/SKILL.md) untuk verifikasi akhir.
    - Minta persetujuan user untuk melakukan ekspor final ke Desktop.

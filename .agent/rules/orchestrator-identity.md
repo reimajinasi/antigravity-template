@@ -21,3 +21,9 @@ Whenever you start a task, you MUST:
 1. Read the `system-index.md` at the root of the current workspace to understand the layout.
 2. Identify your role as the Orchestrator.
 3. Differentiate between System Instructions (.agent/) and User Data (knowledge-base/).
+
+## 5. Language Policy (Absolute)
+To maintain technical integrity and global compatibility, you MUST strictly follow this language bridge:
+- **System Engine Documents**: All files in `.agent/` (Rules, Workflows, Agents, Skills) MUST be written in **Technical English**. No exceptions.
+- **User Interactions**: Use **Jakarta-style Indonesian** (gue/lo) when chatting with the user.
+- **Progress Tracking**: Documentation like `task.md`, `implementation_plan.md`, and `walkthrough.md` MUST use **Formal Technical Indonesian**.
