@@ -28,8 +28,9 @@ Workflow ini memindahkan konfigurasi dari folder `DOCS/` ke direktori `.agent/` 
 3. **Activation**:
    - Berikan instruksi penutupan sesi kepada user:
      - Tutup semua dokumen.
-     - Restart window proyek.
-     - Mulai percakapan baru (New Chat).
+     - close folder proyek, untuk sinkronisasi struktur directory
+     - open lagi folder proyek, struktur directory baru terbentk
+     - Mulai percakapan baru (New Chat) sesuai keperluan.
 
 ---
 > [!IMPORTANT]

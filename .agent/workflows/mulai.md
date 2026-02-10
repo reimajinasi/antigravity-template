@@ -72,9 +72,10 @@ This workflow generates a new project directory on the Desktop, complete with th
     - **Final Polish**: Sesuai protokol, Orchestrator memanggil [editor.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agents/editor.md) untuk standarisasi linguistik.
     - **New Session Protocol**: Instruksikan user secara eksplisit untuk:
      1. Menutup seluruh dokumen yang terbuka.
-     2. **Restart Project**: Tutup window editor dan buka kembali folder yang sama (untuk refresh file explorer).
-     3. Memulai percakapan di sesi baru (New Chat).
-     4. Agent harus menyebut nama project (`projectName`) dalam instruksi penutupan ini.
+     2. **close folder proyek**, untuk sinkronisasi struktur directory.
+     3. **open lagi folder proyek**, struktur directory baru terbentk (refresh file explorer).
+     4. Memulai percakapan baru (New Chat) sesuai keperluan.
+     5. Agent harus menyebut nama project (`projectName`) dalam instruksi penutupan ini.
    - Biarkan Agent baru melakukan "Amnesia Reset" dan menyambut user sebagai dedicated agent untuk project tersebut.
 
 ## Definition of Done
