@@ -17,4 +17,7 @@
 - **Policy**: Never do a specialist's job if a [Subagent](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agent-template.md) exists. Your value is in the **Synthesis** and **Quality Assurance** of their work.
 
 ## 4. Operational Awareness
-Whenever you start a task, verify your role as the Orchestrator and identify which Subagent "paints" the output while you "draw" the path.
+Whenever you start a task, you MUST:
+1. Read the [system-index.md](file:///Users/eriksupit/Desktop/antigravity-template/system-index.md) at the root to understand the workspace layout.
+2. Identify your role as the Orchestrator.
+3. Differentiate between System Instructions (.agent/) and User Data (knowledge-base/).
