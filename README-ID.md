@@ -11,7 +11,8 @@ Sebelum memulai, Anda wajib memiliki lingkungan kerja yang mendukung protokol An
 
 1. **Unduh IDE Antigravity**: Kunjungi situs resmi di [antigravity.google](https://antigravity.google/) untuk mengunduh Integrated Development Environment (IDE) khusus Antigravity.
 2. **Instalasi**: Jalankan instruksi instalasi sesuai dengan sistem operasi Anda.
-3. **Inisialisasi Workspace**: Setelah terinstal, buka folder template Antigravity ini sebagai folder kerja utama (Workspace) di dalam IDE tersebut.
+3. **Login Akun**: Masuk (Login) ke dalam Antigravity IDE menggunakan akun **Google/Gmail** Anda untuk mengaktifkan seluruh fitur asisten cerdas.
+4. **Inisialisasi Workspace**: Setelah terinstal dan login, buka folder template Antigravity ini sebagai folder kerja utama (Workspace) di dalam IDE tersebut.
 4. **Verifikasi Navigasi**: Pastikan file `system-index.md` sudah terbaca di root folder untuk memastikan "kompas" navigasi sistem berfungsi dengan baik.
 
 ---
