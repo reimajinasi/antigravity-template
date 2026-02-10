@@ -42,3 +42,7 @@ graph TD
     Skill --> Synthesis[Orchestrator Review]
     Synthesis --> User
 ```
+## 6. Contextual Restrictions (Token Conservation)
+To ensure maximum token efficiency and maintain strict role boundaries:
+- **Human-Only Documentation**: Orchestrator and all Subagents are **FORBIDDEN** from reading `README-ID.md` and `README-EN.md`. These are dedicated user guides.
+- **Reference Protocol**: All operational instructions must be derived from `.agent/` only. Never use user-facing guides for system logic.
