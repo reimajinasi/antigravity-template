@@ -52,16 +52,24 @@ This workflow generates a new project directory on the Desktop, complete with th
    - **Git Action**: `git add . && git commit -m "feat: generate technical architecture and manifest"`
 6. **Phase 5: Agent Generation**:
    - Berdasarkan semua data yang ada, definisikan persona agent spesifik untuk membantu project.
-   - **Protocol**: Gunakan format [agent-template.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agent-template.md) untuk mendefinisikan **Subagents** yang masing-masing memiliki `assigned_skill`.
-   - Output: `DOCS/agents/` (menggunakan format Subagent Persona).
+   - **Protocol**: Gunakan format [agent-template.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agent-template.md) untuk mendefinisikan **Subagents**.
+   - **Constraint**: Setiap agen harus memiliki peran yang unik dan mendukung visi di `personal-context.md`.
+   - Output: `DOCS/agents/`.
+7. **Phase 5b: Skill Forging (Contextual Tools)**:
+   - **Action**: Untuk setiap Subagent baru, Orchestrator harus men-generate skill spesifik menggunakan [skill-template.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skill-template.md).
+   - **Focus**: Skill harus mencerminkan "Identity & Voice" proyek (misal: "Sarcastic Tone Engine" untuk proyek konverter gaya bahasa).
+   - Output: `DOCS/skills/[skill-name]/SKILL.md`.
+8. **Phase 5c: Registry Sync & Logic Update**:
+   - **Action**: Update tabel **Agent-to-Skill Registry** di `DOCS/rules/orchestration-logic.md` agar mencantumkan Subagent baru dan Skill kontekstual yang baru dibuat.
+   - **Verification**: Pastikan link file di dalam tabel registry mengarah ke path yang benar di folder `DOCS/`.
    - // turbo
-   - **Git Action**: `git add . && git commit -m "feat: generate subagent personas based on orchestration logic"`
-7. **Phase 6: Final Audit & Validation**:
+   - **Git Action**: `git add . && git commit -m "feat: generate contextual agents, skills, and update orchestration registry"`
+9. **Phase 6: Final Audit & Validation**:
    - **Delegation Protocol**: Orchestrator mendelegasikan validasi akhir kepada [auditor.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agents/auditor.md).
    - Re-check interkonektivitas antar semua file di folder `exports/`.
    - Gunakan skill [context-audit](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/context-audit/SKILL.md) untuk verifikasi akhir.
    - Minta persetujuan user untuk melakukan ekspor final ke Desktop.
-8. **Phase 7: Physical Export & Clean Boot**:
+10. **Phase 7: Physical Export & Clean Boot**:
    - **Dynamic Documentation**: Sesuai protokol orkestrasi, Orchestrator memanggil [editor.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agents/editor.md) untuk men-generate `DOCS/README.md` yang merangkum visi proyek, struktur tim agen, dan panduan operasional awal berdasarkan `personal-context.md`.
    - // turbo
    - **Action**: Salin/Pindah folder dari `exports/[project-name]` ke `~/Desktop/[project-name]`.
