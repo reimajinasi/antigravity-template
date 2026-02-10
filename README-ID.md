@@ -1,61 +1,60 @@
-# Antigravity 2.0: Panduan Operasional (ID)
+# Antigravity 2.0: Panduan Operasional Resmi (ID)
 
-Selamat datang di ekosistem **Antigravity**. Ini bukan sekadar template. Ini adalah "Pabrik Agen" otonom yang siap mencetak sistem cerdas sesuai visi lo. 
+Selamat datang di ekosistem **Antigravity**. Ini bukan sekadar template kode biasa, melainkan sebuah infrastruktur "Pabrik Agen" otonom yang dirancang untuk mewujudkan sistem cerdas sesuai dengan visi strategis Anda.
 
-Paham? Bagus. Mari kita mulai.
-
----
-
-## 🚀 Persiapan Awal
-Sebelum lo bisa memerintah gue ddan subagen-subagen lainnya, lo butuh "Editor" yang dukung protokol ini (seperti VS Code atau Cursor).
-
-1. **Download/Clone**: Ambil folder `antigravity-template` ini ddan simpan di tempat yang lo suka.
-2. **Buka Folder**: Pake Editor lo, buka folder template ini sebagai workspace utama.
-3. **Trigger Orchestrator**: Cari file `system-index.md` di root buat liat peta jalannya.
+Dokumen ini akan membimbing Anda langkah-demi-langkah, mulai dari instalasi hingga pengoperasian proyek mandiri.
 
 ---
 
-## 🛠 Langkah 1: Membangun Proyek (/mulai)
-Ini adalah tahap **Project Factory**. Gue (Orchestrator) bakal ngebimbing lo buat ngerancang "Jiwa" proyek baru lo.
+## 🚀 Langkah 0: Instalasi Lingkungan Kerja
+Sebelum memulai, Anda wajib memiliki lingkungan kerja yang mendukung protokol Antigravity secara penuh.
 
-1. **Ketik `/mulai`** di chat: Gue bakal langsung aktif ddan nyambut lo pke gaya Jakarta.
-2. **Pemberian Nama**: Kasih tau gue nama proyek lo. Gue bakal bikin foldernya otomatis di Desktop (atau di folder `exports/` lokal).
-3. **Discovery (Phase 1)**: Gue bakal delegasiin tugas ke `interviewer.md`. Dia bakal nanya soal Visi, Misi, ddan Persona proyek lo. Jawab yang bener. Penting.
-4. **Drafting (Phase 2-5)**: Gue ddan Geng Agen bakal ngerancang Rules, Workflow, ddan Personalisasi Proyek lo.
-5. **Skill Forging (Phase 5b)**: Di sini keajaiban terjadi. Gue bakal bikin "Senjata" khusus buat proyek lo (Skill modular baru).
-6. **Ekspor (Phase 7)**: Setelah lo setuju, folder proyek lo bakal gue pindahin ke Desktop ddan gue suntikkan "GPS Navigasi" (`system-index.md`).
+1. **Unduh IDE Antigravity**: Kunjungi situs resmi di [antigravity.google](https://antigravity.google/) untuk mengunduh Integrated Development Environment (IDE) khusus Antigravity.
+2. **Instalasi**: Jalankan instruksi instalasi sesuai dengan sistem operasi Anda.
+3. **Inisialisasi Workspace**: Setelah terinstal, buka folder template Antigravity ini sebagai folder kerja utama (Workspace) di dalam IDE tersebut.
+4. **Verifikasi Navigasi**: Pastikan file `system-index.md` sudah terbaca di root folder untuk memastikan "kompas" navigasi sistem berfungsi dengan baik.
 
 ---
 
-## 🔑 Langkah 2: Inisialisasi Proyek (/init)
-Setelah proyek lo lahir di Desktop, lo harus pindah workspace ke sana. Ini krusial.
+## 🛠 Langkah 1: Membangun Proyek Baru (/mulai)
+Tahap ini disebut sebagai **Project Factory**. Orchestrator akan membimbing Anda dalam merancang fondasi dan identitas proyek baru.
 
-1. **Buka Folder Proyek**: Di Editor lo, buka folder proyek yang baru gue bikin di Desktop.
-2. **Ketik `/init`**: Ini adalah ritual "Pembersihan Dasar". 
-   - Gue bakal mindahin semua instruksi ke folder `.agent/`.
-   - Jejak-jejak pabrik (`DOCS/`) bakal gue hapus biar bersih.
-   - GPS sistem lo bakal disinkronisasi.
-3. **Amnesia Reset**: Gue bakal "lupa" kalau gue pernah jadi mesin pabrik ddan berubah jadi agen dedikasi buat proyek baru lo.
-
----
-
-## 🚨 Aturan Main Utama
-Biar lo ddan agen gak debat kusir, inget tiga hal ini:
-
-- **System Engine = English**: Semua file di `.agent/` (Rules, Workflows, Agents, Skills) WAJIB pke Bahasa Inggris. Ini standar teknis global. Jeroan mesin gak boleh pke bahasa gado-gado.
-- **User Space = Indonesian**: Kita ngobrol pke Bahasa Indonesia (gue/lo). Santai aja.
-- **Knowledge Base**: Jangan taruh instruksi sistem di `knowledge-base/`. Itu cuma buat DATA REFERENSI. Agent dilarang nyari cara kerja di situ.
+1. **Aktifkan Perintah `/mulai`**: Ketik perintah ini di jendela chat. Orchestrator akan memulai sesi penemuan (Discovery).
+2. **Definisi Visi (Phase 1)**: Anda akan berinteraksi dengan `interviewer.md`. Sampaikan visi, misi, dan persona proyek yang Anda inginkan secara detail.
+3. **Perancangan Struktur (Phase 2-5)**: Tim agen spesialis akan menyusun aturan (Rules), alur kerja (Workflows), dan identitas agen khusus untuk proyek Anda.
+4. **Skill Forging (Phase 5b)**: Sistem akan menimpa insting lama dan menempa "kemampuan" (Skills) baru yang unik dan khusus hanya untuk proyek tersebut.
+5. **Ekspor Proyek (Phase 7)**: Setelah Anda menyetujui seluruh rancangan, Orchestrator akan mengekspor folder proyek tersebut ke Desktop Anda (atau lokasi yang ditentukan) lengkap dengan "GPS Navigasi" sistem yang baru.
 
 ---
 
-## 💡 Tips Biar Lo Gak Pusing
-- **Liat `system-index.md`**: Kalau lo atau agen lo nyasar, baca file ini di root. Ini kompas utama.
-- **Pragmatisme Artifact**: Gue gak bakal bikin artifact buat tugas kecil. Kalau lo cuma nanya "Apa kabar?", gue bakal jawab di chat langsung. Gak pke birokrasi.
-- **Anti-AI Detection**: Tulisan yang gue hasilin udah gue poles biar kerasa "manusia" pke struktur tak terduga ddan interupsi pendek. Keren kan?
+## 🔑 Langkah 2: Aktivasi & Inisialisasi (/init)
+Setelah proyek baru berhasil dibuat, Anda harus berpindah ruang kerja ke folder proyek tersebut.
 
-Sekarang, ketik `/mulai` ddan tunjukin ke gue apa misi besar lo hari ini. 
-
-**Gaspol.**
+1. **Buka Proyek Baru**: Gunakan IDE Antigravity untuk membuka folder proyek yang baru saja dibuat di Desktop.
+2. **Aktifkan Perintah `/init`**: Ini adalah prosedur pembersihan dan aktivasi akhir.
+   - Sistem akan menyinkronkan folder `.agent/`.
+   - Dokumentasi sementara dari pabrik (`DOCS/`) akan dibersihkan.
+   - Orchestrator akan melakukan "Reset Identitas" untuk fokus sepenuhnya pada proyek baru tersebut.
 
 ---
-*Dokumentasi ini dibuat oleh Orchestrator Antigravity untuk kenyamanan User.*
+
+## 🚨 Protokol Utama Sistem
+Untuk menjaga integritas teknis, Anda dan agen wajib mematuhi aturan berikut:
+
+- **Bahasa Sistem (English)**: Seluruh file di dalam folder `.agent/` (Rules, Workflows, Agents, Skills) **WAJIB** ditulis dalam Bahasa Inggris teknis. Ini adalah standar global agar mesin dan agen dapat bekerja dengan akurasi maksimal.
+- **Interaksi Antarmuka (Indonesia)**: Komunikasi antara agen dan Anda tetap menggunakan Bahasa Indonesia yang santai dan efektif.
+- **Pemisahan Konteks**: Folder `knowledge-base/` hanya digunakan untuk menyimpan data referensi. Jangan letakkan instruksi sistem di dalamnya.
+
+---
+
+## 💡 Keunggulan Antigravity 2.0
+- **Navigasi Terpusat**: Selalu merujuk pada `system-index.md` jika Anda atau agen merasa kehilangan arah.
+- **Output Pragmatis**: Agen telah dioptimalkan untuk bekerja secara lincah. Tugas sederhana akan diselesaikan langsung di chat tanpa birokrasi dokumen yang berlebihan.
+- **Otonomi Gaya Bahasa**: Dengan teknik "Unpredictable Structure", output tulisan yang dihasilkan akan terasa lebih natural, ekspresif, dan sulit dideteksi sebagai tulisan AI/Robot.
+
+Sekarang, silakan ketik perintah `/mulai` untuk memulai perjalanan inovasi Anda.
+
+**Selamat bekerja.**
+
+---
+*Dokumentasi ini disusun oleh Orchestrator Antigravity sebagai standar operasional resmi Anda.*
