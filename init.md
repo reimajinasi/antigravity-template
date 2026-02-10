@@ -12,6 +12,7 @@ cp -r DOCS/rules/ .agent/rules/
 cp -r DOCS/workflows/ .agent/workflows/
 cp -r DOCS/agents/ .agent/agents/
 cp -r DOCS/skills/ .agent/skills/
+cp -r DOCS/knowledge-base/ knowledge-base/
 cp DOCS/personal-context.md .agent/user/user-profile.md
 rm -rf DOCS/ factory-status.json init.md
 ```

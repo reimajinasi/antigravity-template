@@ -20,6 +20,7 @@ This workflow generates a new project directory on the Desktop, complete with th
    - **Directory Creation**: Buat folder baru di dalam direktori `exports/` lokal (`./exports/[project-name]`).
    - Agent mengecek direktori `knowledge-base/` template dan membaca [file-index.md](file:///Users/eriksupit/Desktop/antigravity-template/knowledge-base/file-index.md).
    - **Skill Preparation**: Salin folder `.agent/skills/` dari template ke `exports/[project-name]/DOCS/skills/`.
+   - **Knowledge Base Prep**: Salin folder `knowledge-base/` dari template ke `exports/[project-name]/DOCS/knowledge-base/`.
    - // turbo
    - **Git Action**: Jalankan `git init` di dalam folder project lokal tersebut.
    - **Internal Logic**: Aktifkan skill [writing-style](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/writing-style/SKILL.md), [fact-search](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/fact-search/SKILL.md), [linguistic-bridge](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/linguistic-bridge/SKILL.md), [advanced-analytics](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/advanced-analytics/SKILL.md).
