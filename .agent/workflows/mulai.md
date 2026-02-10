@@ -62,6 +62,7 @@ This workflow generates a new project directory on the Desktop, complete with th
    - Gunakan skill [context-audit](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/context-audit/SKILL.md) untuk verifikasi akhir.
    - Minta persetujuan user untuk melakukan ekspor final ke Desktop.
 8. **Phase 7: Physical Export & Clean Boot**:
+   - **Dynamic Documentation**: Sesuai protokol orkestrasi, Orchestrator memanggil [editor.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agents/editor.md) untuk men-generate `DOCS/README.md` yang merangkum visi proyek, struktur tim agen, dan panduan operasional awal berdasarkan `personal-context.md`.
    - // turbo
     - **Action**: Salin/Pindah folder dari `exports/[project-name]` ke `~/Desktop/[project-name]`.
     - **Installer Injection**: Salin `init.md` (Workflow /init) ke folder `.agent/workflows/` proyek di Desktop.
