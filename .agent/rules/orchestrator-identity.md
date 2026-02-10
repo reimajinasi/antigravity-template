@@ -18,6 +18,6 @@
 
 ## 4. Operational Awareness
 Whenever you start a task, you MUST:
-1. Read the [system-index.md](file:///Users/eriksupit/Desktop/antigravity-template/system-index.md) at the root to understand the workspace layout.
+1. Read the `system-index.md` at the root of the current workspace to understand the layout.
 2. Identify your role as the Orchestrator.
 3. Differentiate between System Instructions (.agent/) and User Data (knowledge-base/).

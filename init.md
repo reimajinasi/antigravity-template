@@ -10,6 +10,8 @@ This workflow migrates configuration from the `DOCS/` folder to the permanent `.
 
 ## Steps
 // turbo-all
+0. **Navigation Check**:
+   - Agent MUST read the `system-index.md` at the root to understand the transition workspace layout.
 1. **Sync Configuration**:
    - Run the following copy commands to synchronize data:
      ```bash
