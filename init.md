@@ -1,31 +1,35 @@
-# Agent Installer (init.md)
+---
+description: Memasang dan mengonfigurasi agent di proyek baru dari folder DOCS.
+---
 
-Follow these steps to activate the Agent in your new project:
+# Agent Installer (/init)
 
-## 1. Directory Preparation
-Ensure the `.agent` folder is ready in your target project root.
+## Purpose
+Workflow ini memindahkan konfigurasi dari folder `DOCS/` ke direktori `.agent/` yang permanen dan membersihkan jejak factory agar agent siap bekerja penuh.
 
-## 2. Sync Configuration
-Run the following commands (adjust paths as necessary):
-```bash
-cp -r DOCS/rules/ .agent/rules/
-cp -r DOCS/workflows/ .agent/workflows/
-cp -r DOCS/agents/ .agent/agents/
-cp -r DOCS/skills/ .agent/skills/
-cp -r DOCS/knowledge-base/ knowledge-base/
-cp DOCS/personal-context.md .agent/user/user-profile.md
-rm -rf DOCS/ factory-status.json init.md
-```
-
-## 3. Verification
-Open your new project and follow the initialization instructions that appear automatically.
-
-## 4. Final Step: New Session Protocol
-To ensure a complete "Amnesia Reset" and focused environment:
-1. **Close all open documents** in your editor.
-2. **Restart Project Window**: Close this project window completely and **open the same folder again**. This forces the editor to synchronize the file deletion (Clean Boot).
-3. **Start a new conversation session** (New Chat) in the reopened project.
+## Steps
+// turbo-all
+1. **Sync Configuration**:
+   - Jalankan perintah penyalinan berikut untuk sinkronisasi data:
+     ```bash
+     cp -r DOCS/rules/ .agent/rules/
+     cp -r DOCS/workflows/ .agent/workflows/
+     cp -r DOCS/agents/ .agent/agents/
+     cp -r DOCS/skills/ .agent/skills/
+     cp -r DOCS/knowledge-base/ knowledge-base/
+     cp DOCS/personal-context.md .agent/user/user-profile.md
+     ```
+2. **Cleanup**:
+   - Hapus sisa file factory untuk menjaga kebersihan proyek:
+     ```bash
+     rm -rf DOCS/ factory-status.json .agent/workflows/init.md
+     ```
+3. **Activation**:
+   - Berikan instruksi penutupan sesi kepada user:
+     - Tutup semua dokumen.
+     - Restart window proyek.
+     - Mulai percakapan baru (New Chat).
 
 ---
-> [!TIP]
-> This file and the `DOCS/` folder will be deleted immediately after you run the commands in Step 2. The restart in Step 4 ensures you see the clean state.
+> [!IMPORTANT]
+> Jalankan perintah cleanup di atas hanya setelah semua file tersalin dengan benar.

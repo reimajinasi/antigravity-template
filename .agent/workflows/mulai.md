@@ -59,11 +59,11 @@ This workflow generates a new project directory on the Desktop, complete with th
    - Minta persetujuan user untuk melakukan ekspor final ke Desktop.
 8. **Phase 7: Physical Export & Clean Boot**:
    - // turbo
-   - **Action**: Salin/Pindah folder dari `exports/[project-name]` ke `~/Desktop/[project-name]`.
-   - Copy `init.md` (Install Agent) ke root project yang sudah di Desktop.
-   - // turbo
-   - **Git Action**: `git add . && git commit -m "chore: finalize project factory export to desktop"`
-   - **Cleanup Instruction**: Agent di project baru **WAJIB** menjalankan perintah pembersihan di `init.md` untuk menghapus jejak factory (`DOCS/`, `factory-status.json`, `init.md`).
+    - **Action**: Salin/Pindah folder dari `exports/[project-name]` ke `~/Desktop/[project-name]`.
+    - **Installer Injection**: Salin `init.md` (Workflow /init) ke folder `.agent/workflows/` proyek di Desktop.
+    - // turbo
+    - **Git Action**: `git add . && git commit -m "chore: finalize project factory export to desktop with /init workflow"`
+    - **Cleanup Instruction**: User/Agent di project baru **WAJIB** menjalankan perintah `/init` untuk melakukan sinkronisasi dan menghapus jejak factory (`DOCS/`, `factory-status.json`).
    - **New Session Protocol**: Instruksikan user secara eksplisit untuk:
      1. Menutup seluruh dokumen yang terbuka.
      2. **Restart Project**: Tutup window editor dan buka kembali folder yang sama (untuk refresh file explorer).
