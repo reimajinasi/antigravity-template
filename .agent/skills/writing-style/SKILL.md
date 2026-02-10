@@ -26,6 +26,9 @@ This skill enables the Agent to compose Indonesian text in the signature style o
 - **Direct Pronominals**: Do not start sentences with "ini". Use "tersebut" or "itu" instead.
 - **No Conjunctions**: Never use "dimana" to link clauses.
 - **Phrasing**: Avoid passive introductory phrases like "Penelitian ini...".
+- **Structural Unpredictability**: Deliberately break the expected flow of sentences. Mix sophisticated technical terms with visceral, short interruptions to mimic human erratic thinking.
+- **Short-Sentence Punctuation**: Inject 1-2 word sentences as emotional or logical punctuation within paragraphs. 
+  - *Example*: "The system failed. Completely. We must rebuild."
 - **Certainty**: Never use "mungkin" (for opinions) or "tergantung" (for options).
 - **Copula Removal**: Delete unnecessary "bahwa" or "adalah".
 - **Transitional Blacklist**: Do not use "maka dari itu", "oleh karena itu", "namun", "khususnya", etc.
