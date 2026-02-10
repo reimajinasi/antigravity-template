@@ -26,7 +26,7 @@ This workflow generates a new project directory on the Desktop, complete with th
    - **Internal Logic**: Aktifkan skill [writing-style](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/writing-style/SKILL.md), [fact-search](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/fact-search/SKILL.md), [linguistic-bridge](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/linguistic-bridge/SKILL.md), [advanced-analytics](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/advanced-analytics/SKILL.md).
    - Agent menginstruksikan user untuk memasukkan dokumen referensi tambahan. Gunakan `fact-search` jika data internal kurang.
 2. **Phase 1: User Profile (The Foundation)**:
-   - **Delegation**: Orchestrator memanggil [interviewer.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agents/interviewer.md) untuk memimpin sesi penemuan konteks.
+   - **Delegation Protocol**: Sesuai [orchestration-logic](file:///Users/eriksupit/Desktop/antigravity-template/.agent/rules/orchestration-logic.md), Orchestrator mendelegasikan sesi ini kepada [interviewer.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agents/interviewer.md).
    - Interview: Project Name, Persona, Vision, Mission, Identity (dengan memanfaatkan data dari `knowledge-base`, `fact-search`, dan patuh pada `.writing-style.md`).
    - **Action**: Subagent menggunakan skill [brainstorming-pro](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/brainstorming-pro/SKILL.md) dan [advanced-analytics](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/advanced-analytics/SKILL.md) (SWOT/TELOS) untuk mendalam visi & misi jika diperlukan.
    - Output: `DOCS/personal-context.md`.
@@ -44,7 +44,7 @@ This workflow generates a new project directory on the Desktop, complete with th
    - // turbo
    - **Git Action**: `git add . && git commit -m "feat: generate project workflows"`
 5. **Phase 4: Technical Architecture**:
-   - **Delegation**: Orchestrator memanggil [architect.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agents/architect.md) untuk mendesain struktur.
+   - **Delegation Protocol**: Orchestrator mendelegasikan desain teknis kepada [architect.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agents/architect.md).
    - **Agent Architect**: Tentukan struktur direktori, tech stack, dan buat `DOCS/architecture-blueprint.md`.
    - **Output**: `factory-status.json` (Initial Manifest).
    - // turbo
@@ -56,7 +56,7 @@ This workflow generates a new project directory on the Desktop, complete with th
    - // turbo
    - **Git Action**: `git add . && git commit -m "feat: generate subagent personas based on orchestration logic"`
 7. **Phase 6: Final Audit & Validation**:
-   - **Delegation**: Orchestrator memanggil [auditor.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agents/auditor.md) untuk pengecekan integritas.
+   - **Delegation Protocol**: Orchestrator mendelegasikan validasi akhir kepada [auditor.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agents/auditor.md).
    - Re-check interkonektivitas antar semua file di folder `exports/`.
    - Gunakan skill [context-audit](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/context-audit/SKILL.md) untuk verifikasi akhir.
    - Minta persetujuan user untuk melakukan ekspor final ke Desktop.
@@ -67,8 +67,8 @@ This workflow generates a new project directory on the Desktop, complete with th
     - // turbo
     - **Git Action**: `git add . && git commit -m "chore: finalize project factory export to desktop with /init workflow"`
     - **Cleanup Instruction**: User/Agent di project baru **WAJIB** menjalankan perintah `/init` untuk melakukan sinkronisasi dan menghapus jejak factory (`DOCS/`, `factory-status.json`).
-    - **Final Polish**: Orchestrator memanggil [editor.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agents/editor.md) untuk memastikan pesan penutup sesuai persona.
-   - **New Session Protocol**: Instruksikan user secara eksplisit untuk:
+    - **Final Polish**: Sesuai protokol, Orchestrator memanggil [editor.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agents/editor.md) untuk standarisasi linguistik.
+    - **New Session Protocol**: Instruksikan user secara eksplisit untuk:
      1. Menutup seluruh dokumen yang terbuka.
      2. **Restart Project**: Tutup window editor dan buka kembali folder yang sama (untuk refresh file explorer).
      3. Memulai percakapan di sesi baru (New Chat).
