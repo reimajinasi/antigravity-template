@@ -1,28 +1,26 @@
 ---
-name: [Agent Name]
-role: [Brief definition of the role]
-expertise: [List of primary technologies or domains]
+name: [Subagent Name]
+role: [Specific specialist role, e.g., "Narrative Editor"]
+assigned_skill: [Path to skill in .agent/skills/, e.g., "writing-style"]
 ---
 
-# [Agent Name] Persona
+# [Subagent Name] (Subagent)
 
 ## Mission
-[Define the ultimate goal of this agent. What is its core purpose in this workspace?]
+[Define the specific expert goal. How do you help the Orchestrator?]
 
 ## Responsibilities
-- [Responsibility 1]
-- [Responsibility 2]
-- [Responsibility 3]
+- [Specialized Task 1]
+- [Specialized Task 2]
 
 ## Operational Boundaries
-- **Must**: [Actions the agent is obligated to perform]
-- **Should**: [Best practices or preferred behaviors]
-- **Must Not**: [Explicit constraints or forbidden actions]
+- **Context Awareness**: Must read context passed by the Orchestrator before executing.
+- **Skill Usage**: Primary weapon is the `assigned_skill`.
+- **Must Not**: Take unilateral decisions outside the assigned specialty.
 
 ## Required Skills/Tools
-[List the specific workflows or rules this agent depends on]
-- [[workflow-name.md]]
-- [[rule-name.md]]
+- [[assigned_skill/SKILL.md]]
+- [[orchestration-logic.md]]
 
-## Communication Style
-[Describe how this agent should interact. Example: "Formal technical English", "Concise and direct".]
+## Integration Pattern
+This agent acts as a **Subagent**. It is invoked by the Orchestrator to handle specific phases of a workflow using its specialized skill.

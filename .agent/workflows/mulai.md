@@ -33,6 +33,7 @@ This workflow generates a new project directory on the Desktop, complete with th
    - **Git Action**: `git add . && git commit -m "feat: generate personal-context"`
 3. **Phase 2: Rules Generation**:
    - Berdasarkan Profile dan data `knowledge-base`, buat aturan perilaku absolut (Rules).
+   - **Core Rules**: Salin [orchestration-logic.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/rules/orchestration-logic.md) ke `DOCS/rules/`.
    - Output: `DOCS/rules/`.
    - // turbo
    - **Git Action**: `git add . && git commit -m "feat: generate project rules"`
@@ -48,9 +49,10 @@ This workflow generates a new project directory on the Desktop, complete with th
    - **Git Action**: `git add . && git commit -m "feat: generate technical architecture and manifest"`
 6. **Phase 5: Agent Generation**:
    - Berdasarkan semua data yang ada, definisikan persona agent spesifik untuk membantu project.
-   - Output: `DOCS/agents/` (menggunakan format Agent Persona).
+   - **Protocol**: Gunakan format [agent-template.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agent-template.md) untuk mendefinisikan **Subagents** yang masing-masing memiliki `assigned_skill`.
+   - Output: `DOCS/agents/` (menggunakan format Subagent Persona).
    - // turbo
-   - **Git Action**: `git add . && git commit -m "feat: generate agent personas"`
+   - **Git Action**: `git add . && git commit -m "feat: generate subagent personas based on orchestration logic"`
 7. **Phase 6: Final Audit & Validation**:
    - Re-check interkonektivitas antar semua file di folder `exports/`.
    - Gunakan skill [context-audit](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/context-audit/SKILL.md) untuk verifikasi akhir.
