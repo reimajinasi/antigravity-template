@@ -26,8 +26,9 @@ This workflow generates a new project directory on the Desktop, complete with th
    - **Internal Logic**: Aktifkan skill [writing-style](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/writing-style/SKILL.md), [fact-search](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/fact-search/SKILL.md), [linguistic-bridge](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/linguistic-bridge/SKILL.md), [advanced-analytics](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/advanced-analytics/SKILL.md).
    - Agent menginstruksikan user untuk memasukkan dokumen referensi tambahan. Gunakan `fact-search` jika data internal kurang.
 2. **Phase 1: User Profile (The Foundation)**:
+   - **Delegation**: Orchestrator memanggil [interviewer.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agents/interviewer.md) untuk memimpin sesi penemuan konteks.
    - Interview: Project Name, Persona, Vision, Mission, Identity (dengan memanfaatkan data dari `knowledge-base`, `fact-search`, dan patuh pada `.writing-style.md`).
-   - **Action**: Gunakan skill [brainstorming-pro](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/brainstorming-pro/SKILL.md) dan [advanced-analytics](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/advanced-analytics/SKILL.md) (SWOT/TELOS) untuk mendalam visi & misi jika diperlukan.
+   - **Action**: Subagent menggunakan skill [brainstorming-pro](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/brainstorming-pro/SKILL.md) dan [advanced-analytics](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/advanced-analytics/SKILL.md) (SWOT/TELOS) untuk mendalam visi & misi jika diperlukan.
    - Output: `DOCS/personal-context.md`.
    - // turbo
    - **Git Action**: `git add . && git commit -m "feat: generate personal-context"`
