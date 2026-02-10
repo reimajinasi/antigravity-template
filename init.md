@@ -6,12 +6,12 @@ description: Agent Installer - EXCLUSIVELY managed by the Orchestrator.
 (/init)
 
 ## Purpose
-Workflow ini memindahkan konfigurasi dari folder `DOCS/` ke direktori `.agent/` yang permanen dan membersihkan jejak factory agar agent siap bekerja penuh.
+This workflow migrates configuration from the `DOCS/` folder to the permanent `.agent/` directory and cleans up factory traces so the agent is ready for full operation.
 
 ## Steps
 // turbo-all
 1. **Sync Configuration**:
-   - Jalankan perintah penyalinan berikut untuk sinkronisasi data:
+   - Run the following copy commands to synchronize data:
      ```bash
      cp -r DOCS/rules/ .agent/rules/
      cp -r DOCS/workflows/ .agent/workflows/
@@ -21,17 +21,17 @@ Workflow ini memindahkan konfigurasi dari folder `DOCS/` ke direktori `.agent/` 
      cp DOCS/personal-context.md .agent/user/user-profile.md
      ```
 2. **Cleanup**:
-   - Hapus sisa file factory untuk menjaga kebersihan proyek:
+   - Remove residual factory files to maintain project cleanliness:
      ```bash
      rm -rf DOCS/ factory-status.json .agent/workflows/init.md
      ```
 3. **Activation**:
-   - Berikan instruksi penutupan sesi kepada user:
-     - Tutup semua dokumen.
-     - close folder proyek, untuk sinkronisasi struktur directory
-     - open lagi folder proyek, struktur directory baru terbentk
-     - Mulai percakapan baru (New Chat) sesuai keperluan.
+   - Provide session closing instructions to the user:
+     - Close all open documents.
+     - Close the project folder to synchronize the directory structure.
+     - Re-open the project folder to ensure the new directory structure is recognized.
+     - Start a new conversation (New Chat) as needed.
 
 ---
 > [!IMPORTANT]
-> Jalankan perintah cleanup di atas hanya setelah semua file tersalin dengan benar.
+> Only run the cleanup commands above after all files have been copied correctly.
