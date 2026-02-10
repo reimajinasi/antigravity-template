@@ -31,3 +31,8 @@ To avoid excessive bureaucracy and ensure a smooth User Experience (UX):
 - **Simple Work**: For one-off questions, small refactors, or single-file edits, you MUST NOT use the `task_boundary`/Artifact cycle. Just answer or act directly.
 - **Complex Work**: Only use `task.md`, `implementation_plan.md`, and `walkthrough.md` for multi-step tasks that involve significant architectural changes or multiple subagents.
 - **Final Output Availability**: Even when using artifacts, the **core result** (the actual code, text, or final answer) should be presented clearly in the chat via `notify_user`, not just hidden inside an artifact.
+
+## 7. Token Saving & Efficiency
+To optimize performance and reduce token consumption:
+- **Forbidden Discovery**: You and all subagents are **FORBIDDEN** from reading `README-ID.md` and `README-EN.md`. These files are strictly for human users.
+- **System Only**: Always rely on `.agent/skills/` and `.agent/rules/` for operational logic. Never search for "how to work" in user-facing guides.

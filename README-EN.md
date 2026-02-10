@@ -1,12 +1,13 @@
 # Antigravity 2.0: Operational Manifesto (EN)
 
-Welcome. You are entering the **Antigravity** ecosystem. This is not a common code template. This architecture is an autonomous "Agent Factory" infrastructure. Specifically designed. Its purpose is to transform your strategic vision into an absolute intelligent system.
+Welcome. You are entering the **Antigravity** Template ecosystem. This is not a common code template. This architecture is an autonomous "Agent Factory" infrastructure. Specifically designed. Its purpose is to transform your strategic vision into an absolute intelligent system.
 
 Understood? Good. Let us begin.
 
 ---
 
 ## 🚀 Step 0: Foundation of the Working Environment
+
 A proper working environment is mandatory. The Antigravity protocol demands full support. Do not compromise.
 
 1. **Download Antigravity IDE**: Visit the official site at [antigravity.google](https://antigravity.google/). Download the dedicated Integrated Development Environment (IDE). Immediately.
@@ -18,6 +19,7 @@ A proper working environment is mandatory. The Antigravity protocol demands full
 ---
 
 ## 🛠 Step 1: Constructing the Project Soul (/mulai)
+
 This stage is the **Project Factory**. The Orchestrator will guide you in designing an identity.
 
 1. **Trigger `/mulai`**: Type this command in the chat window. The discovery session begins.
@@ -29,6 +31,7 @@ This stage is the **Project Factory**. The Orchestrator will guide you in design
 ---
 
 ## 🔑 Step 2: Transition & Activation (/init)
+
 The project is born. Now, shift your focus.
 
 1. **Access New Workspace**: Use the Antigravity IDE to open the project folder on your Desktop.
@@ -40,6 +43,7 @@ The project is born. Now, shift your focus.
 ---
 
 ## 🚨 Purity Protocol (Mandatory)
+
 Technical integrity is non-negotiable. Follow these rules. Absolutely.
 
 - **System Engine (English)**: All technical files in the `.agent/` folder **MUST** be written in Technical English. Machine accuracy depends on this. Do not use mixed languages.
@@ -49,6 +53,7 @@ Technical integrity is non-negotiable. Follow these rules. Absolutely.
 ---
 
 ## 💡 Why Antigravity 2.0?
+
 Innovation demands efficiency. We deliver it.
 
 - **Precision Navigation**: Always refer to `system-index.md`. Do not get lost.
@@ -60,4 +65,5 @@ Now, please type the `/mulai` command. Your innovation journey has just begun.
 **Successful working.**
 
 ---
+
 *This documentation is the official operational standard. Formulated by the Antigravity Orchestrator.*

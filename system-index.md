@@ -11,6 +11,7 @@ You are currently inside an **Antigravity Managed Workspace**. This file serves 
 | `.agent/agents/` | Subagent Personas | Delegated specialist identities. |
 | `.agent/skills/` | Modular Skills | Tools used by subagents. |
 | `knowledge-base/` | **USER DATA ONLY** | Reference documents provided by the user. Do NOT search for system instructions here. |
+| `README-*.md` | **USER GUIDE ONLY** | Instructions for the human user. **FORBIDDEN FOR AGENTS**. |
 
 ## 3. Standard Operating Procedure (SOP)
 1. **Identify Role**: Always consult [orchestrator-identity](file:///Users/eriksupit/Desktop/antigravity-template/.agent/rules/orchestrator-identity.md) first.

@@ -7,6 +7,7 @@ Paham? Bagus. Mari kita mulai.
 ---
 
 ## 🚀 Langkah 0: Fondasi Lingkungan Kerja
+
 Lingkungan kerja yang tepat adalah mutlak. Protokol Antigravity menuntut dukungan penuh. Jangan kompromi.
 
 1. **Unduh IDE Antigravity**: Kunjungi situs resmi di [antigravity.google](https://antigravity.google/). Unduh Integrated Development Environment (IDE) khusus tersebut. Segera.
@@ -18,9 +19,10 @@ Lingkungan kerja yang tepat adalah mutlak. Protokol Antigravity menuntut dukunga
 ---
 
 ## 🛠 Langkah 1: Konstruksi Jiwa Proyek (/mulai)
+
 Tahap ini adalah **Project Factory**. Orchestrator akan membimbing Anda merancang identitas.
 
-1. **Aktifkan `/mulai`**: Ketik perintah tersebut di jendela chat. Sesi penemuan dimulai.
+1. **Aktifkan `/mulai`**: Ketik perintah tersebut di jendela chat. Sesi perancangan dimulai.
 2. **Penetrasi Visi (Phase 1)**: Anda akan berinteraksi dengan `interviewer.md`. Sampaikan visi, misi, dan persona proyek Anda. Jangan ragu. Kejujuran intelektual adalah landasan utama di sini.
 3. **Manifestasi Struktur (Phase 2-5)**: Tim agen spesialis akan bekerja. Mereka menyusun Rules, Workflows, dan identitas agen khusus. Semuanya unik.
 4. **Skill Forging (Phase 5b)**: Di sini keajaiban terjadi. Sistem akan menempa "kemampuan" (Skills) kontekstual. Khusus untuk Anda.
@@ -29,7 +31,8 @@ Tahap ini adalah **Project Factory**. Orchestrator akan membimbing Anda merancan
 ---
 
 ## 🔑 Langkah 2: Transisi & Aktivasi (/init)
-Proyek sudah lahir. Sekarang, pindahkan fokus Anda. 
+
+Proyek sudah lahir. Sekarang, pindahkan fokus Anda.
 
 1. **Akses Workspace Baru**: Gunakan IDE Antigravity untuk membuka folder proyek di Desktop.
 2. **Ritual `/init`**: Ini adalah prosedur pembersihan akhir.
@@ -40,6 +43,7 @@ Proyek sudah lahir. Sekarang, pindahkan fokus Anda.
 ---
 
 ## 🚨 Protokol Purity (Wajib)
+
 Integritas teknis tidak bisa ditawar. Patuhi aturan ini. Mutlak.
 
 - **System Engine (English)**: Seluruh file teknis di folder `.agent/` **WAJIB** ditulis dalam Bahasa Inggris. Akurasi mesin bergantung pada ini. Jangan gunakan bahasa gado-gado.
@@ -49,6 +53,7 @@ Integritas teknis tidak bisa ditawar. Patuhi aturan ini. Mutlak.
 ---
 
 ## 💡 Mengapa Antigravity 2.0?
+
 Inovasi menuntut efisiensi. Kami memberikannya.
 
 - **Navigasi Presisi**: Rujuk selalu pada `system-index.md`. Jangan tersesat.
@@ -60,4 +65,5 @@ Sekarang, silakan ketik perintah `/mulai`. Perjalanan inovasi Anda baru saja dim
 **Selamat bekerja.**
 
 ---
+
 *Dokumentasi ini adalah standar operasional resmi. Disusun oleh Orchestrator Antigravity.*
