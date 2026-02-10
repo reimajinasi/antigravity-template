@@ -13,7 +13,7 @@ Setiap kali siklus Project Factory (workflow `/mulai`) selesai atau mengalami up
    - `projectName`: Nama project.
    - `createdDate`: Tanggal inisialisasi.
    - `version`: Versi output factory saat ini.
-   - `techStack`: Daftar teknologi yang digunakan.
+   - `solutionComponents`: Daftar komponen solusi yang digunakan (bisa tech stack, format dokumen, atau metode).
    - `agentsDeployed`: Daftar persona agent yang sudah terpasang.
    - `lastCommit`: ID commit terakhir dari fase Audit & Export.
 2. **Persistence**: File ini digunakan sebagai "Single Source of Truth" untuk status 'pabrik' project tersebut.
@@ -28,7 +28,7 @@ Untuk memudahkan pelacakan status project di tengah jalan, memungkinkan audit ot
   "projectName": "Makalah-App",
   "createdDate": "2026-02-09",
   "version": "1.0.0",
-  "techStack": ["Next.js", "Convex", "Tailwind"],
+  "solutionComponents": ["Next.js", "Convex", "Tailwind"],
   "agentsDeployed": ["interviewer", "architect"],
   "lastCommit": "a1b2c3d4"
 }

@@ -8,8 +8,8 @@ This template is designed as an automation framework for building standardized n
 
 ## Quick Start
 1. **Provide Context**: Place your project's reference documents into the `knowledge-base/` folder.
-2. **Run the Factory**: Use the slash command `/mulai` to trigger the discovery and interview process.
-3. **Export Results**: Once completed, follow the instructions in `init.md` to install the agent into your new project destination.
+2. **Run the Factory**: Use the slash command `/mulai` to trigger the discovery and interview process. The project will be built locally in the `exports/` directory.
+3. **Export Results**: Once the build is solid and validated, the system will export the final project folder to your **Desktop**. Follow the instructions in `init.md` (inside the new project) to activate the agent.
 
 ## Workflow
 The system follows a **Cascading Documentation** approach:

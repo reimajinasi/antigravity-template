@@ -13,7 +13,7 @@ Every Agent working in this workspace **MUST** use Git to record every significa
 2. **Atomic Commits**: Perform a commit for every phase of work.
 3. **Commit Messages**: Use descriptive commit messages in English (e.g., "feat: generate personal-context.md").
 4. **Diff Awareness**: Before making major changes, Agents must check `git diff` to understand the document's last status.
-5. **Writing Standard**: Adhere to the built-in writing standard in `knowledge-base/.writing-style.md` for every document/artifact composition.
+5. **Writing Standard**: Adhere to the built-in `writing-style` skill for every document/artifact composition to maintain consistency with the template's signature style.
 
 ## Rationale
 To ensure every non-coding document change has a clear historical trail, enabling interaction audits and maximizing the use of the `diff` feature for revision accuracy.

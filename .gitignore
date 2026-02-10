@@ -19,6 +19,7 @@ Thumbs.db
 # --- Project Factory Tracking ---
 # We keep DOCS/ and knowledge-base/ UNIGNORED to support Git Diff
 # only ignore real temporary environment files
+exports/
 .env
 .env.*
 

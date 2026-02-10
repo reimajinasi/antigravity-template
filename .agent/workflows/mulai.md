@@ -15,14 +15,18 @@ This workflow generates a new project directory on the Desktop, complete with th
 
 ## Steps
 // turbo-all
-1. **Phase 0: Knowledge Discovery**:
-   - Agent mengecek direktori `knowledge-base/` dan membaca [file-index.md](file:///Users/eriksupit/Desktop/antigravity-template/knowledge-base/file-index.md).
+1. **Phase 0: Project Discovery & Init**:
+   - **Action**: Tanyakan nama project kepada user.
+   - **Directory Creation**: Buat folder baru di dalam direktori `exports/` lokal (`./exports/[project-name]`).
+   - Agent mengecek direktori `knowledge-base/` template dan membaca [file-index.md](file:///Users/eriksupit/Desktop/antigravity-template/knowledge-base/file-index.md).
+   - **Skill Preparation**: Salin folder `.agent/skills/` dari template ke `exports/[project-name]/DOCS/skills/`.
    - // turbo
-   - **Git Action**: Jalankan `git init` jika repository belum ada.
-   - **Internal Logic**: Load [writing-style](file:///Users/eriksupit/Desktop/antigravity-template/knowledge-base/.writing-style.md) (bawaan sistem) sebagai filter bahasa utama.
-   - Agent menginstruksikan user untuk memasukkan dokumen referensi tambahan ke dalam direktori tersebut jika dirasa perlu untuk memperkuat konteks.
+   - **Git Action**: Jalankan `git init` di dalam folder project lokal tersebut.
+   - **Internal Logic**: Aktifkan skill [writing-style](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/writing-style/SKILL.md), [fact-search](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/fact-search/SKILL.md), [linguistic-bridge](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/linguistic-bridge/SKILL.md), [advanced-analytics](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/advanced-analytics/SKILL.md).
+   - Agent menginstruksikan user untuk memasukkan dokumen referensi tambahan. Gunakan `fact-search` jika data internal kurang.
 2. **Phase 1: User Profile (The Foundation)**:
-   - Interview: Project Name, Persona, Vision, Mission, Identity (dengan memanfaatkan data dari `knowledge-base` dan patuh pada `.writing-style.md`).
+   - Interview: Project Name, Persona, Vision, Mission, Identity (dengan memanfaatkan data dari `knowledge-base`, `fact-search`, dan patuh pada `.writing-style.md`).
+   - **Action**: Gunakan skill [brainstorming-pro](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/brainstorming-pro/SKILL.md) dan [advanced-analytics](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/advanced-analytics/SKILL.md) (SWOT/TELOS) untuk mendalam visi & misi jika diperlukan.
    - Output: `DOCS/personal-context.md`.
    - // turbo
    - **Git Action**: `git add . && git commit -m "feat: generate personal-context"`
@@ -46,16 +50,26 @@ This workflow generates a new project directory on the Desktop, complete with th
    - Output: `DOCS/agents/` (menggunakan format Agent Persona).
    - // turbo
    - **Git Action**: `git add . && git commit -m "feat: generate agent personas"`
-7. **Phase 6: Audit & Export**:
-   - Re-check interkonektivitas antar semua file.
-   - Copy `init.md` (Install Agent) ke root project.
+7. **Phase 6: Final Audit & Validation**:
+   - Re-check interkonektivitas antar semua file di folder `exports/`.
+   - Gunakan skill [context-audit](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/context-audit/SKILL.md) untuk verifikasi akhir.
+   - Minta persetujuan user untuk melakukan ekspor final ke Desktop.
+8. **Phase 7: Physical Export & Clean Boot**:
    - // turbo
-   - **Git Action**: `git add . && git commit -m "chore: finalize project factory output"`
-   - Instruksikan user untuk pindah ke project baru.
+   - **Action**: Salin/Pindah folder dari `exports/[project-name]` ke `~/Desktop/[project-name]`.
+   - Copy `init.md` (Install Agent) ke root project yang sudah di Desktop.
+   - // turbo
+   - **Git Action**: `git add . && git commit -m "chore: finalize project factory export to desktop"`
+   - **Cleanup Instruction**: Agent di project baru **WAJIB** menjalankan perintah pembersihan di `init.md` untuk menghapus jejak factory (`DOCS/`, `factory-status.json`, `init.md`).
+   - **New Session Protocol**: Instruksikan user secara eksplisit untuk:
+     1. Menutup seluruh dokumen yang terbuka.
+     2. **Restart Project**: Tutup window editor dan buka kembali folder yang sama (untuk refresh file explorer).
+     3. Memulai percakapan di sesi baru (New Chat).
+     4. Agent harus menyebut nama project (`projectName`) dalam instruksi penutupan ini.
+   - Biarkan Agent baru melakukan "Amnesia Reset" dan menyambut user sebagai dedicated agent untuk project tersebut.
 
 ## Definition of Done
-- [ ] Folder `DOCS/` contains the cascading project documents.
-- [ ] File `init.md` is present in the project root.
-- [ ] File `factory-status.json` is updated with complete metadata.
-- [ ] All documents have been audited for consistency.
-- [ ] User has approved the initial setup.
+- [ ] Folder `DOCS/` deleted in the final project.
+- [ ] File `init.md` deleted after installation.
+- [ ] Folder `.agent/` contains all synchronized rules, workflows, and skills.
+- [ ] Agent in the new project has no memory of the factory process (Clean Boot).
