@@ -44,6 +44,7 @@ This workflow generates a new project directory on the Desktop, complete with th
    - // turbo
    - **Git Action**: `git add . && git commit -m "feat: generate project workflows"`
 5. **Phase 4: Technical Architecture**:
+   - **Delegation**: Orchestrator memanggil [architect.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agents/architect.md) untuk mendesain struktur.
    - **Agent Architect**: Tentukan struktur direktori, tech stack, dan buat `DOCS/architecture-blueprint.md`.
    - **Output**: `factory-status.json` (Initial Manifest).
    - // turbo
@@ -55,6 +56,7 @@ This workflow generates a new project directory on the Desktop, complete with th
    - // turbo
    - **Git Action**: `git add . && git commit -m "feat: generate subagent personas based on orchestration logic"`
 7. **Phase 6: Final Audit & Validation**:
+   - **Delegation**: Orchestrator memanggil [auditor.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agents/auditor.md) untuk pengecekan integritas.
    - Re-check interkonektivitas antar semua file di folder `exports/`.
    - Gunakan skill [context-audit](file:///Users/eriksupit/Desktop/antigravity-template/.agent/skills/context-audit/SKILL.md) untuk verifikasi akhir.
    - Minta persetujuan user untuk melakukan ekspor final ke Desktop.
@@ -65,6 +67,7 @@ This workflow generates a new project directory on the Desktop, complete with th
     - // turbo
     - **Git Action**: `git add . && git commit -m "chore: finalize project factory export to desktop with /init workflow"`
     - **Cleanup Instruction**: User/Agent di project baru **WAJIB** menjalankan perintah `/init` untuk melakukan sinkronisasi dan menghapus jejak factory (`DOCS/`, `factory-status.json`).
+    - **Final Polish**: Orchestrator memanggil [editor.md](file:///Users/eriksupit/Desktop/antigravity-template/.agent/agents/editor.md) untuk memastikan pesan penutup sesuai persona.
    - **New Session Protocol**: Instruksikan user secara eksplisit untuk:
      1. Menutup seluruh dokumen yang terbuka.
      2. **Restart Project**: Tutup window editor dan buka kembali folder yang sama (untuk refresh file explorer).
