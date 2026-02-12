@@ -11,6 +11,21 @@
 
 ---
 
+## 📥 How to Get Started
+
+### 🚀 Simple Way (For Everyone)
+
+1. Click the green **Code** button at the top of this GitHub page.
+2. Select **Download ZIP** from the menu.
+3. Unzip the file and place the folder on your Desktop.
+
+### 💻 Developer Way (Git)
+
+```bash
+git clone https://github.com/reimajinasi/antigravity-template.git
+cd antigravity-template
+```
+
 Antigravity is an agentic project generation engine. It doesn't just scaffold code; it births a living workspace equipped with a specialized team of subagents, rules, and workflows tailored to your specific context.
 
 ## 🌀 The Antigravity Lifecycle

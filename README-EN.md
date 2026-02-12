@@ -10,11 +10,14 @@ Understood? Good. Let us begin.
 
 A proper working environment is mandatory. The Antigravity protocol demands full support. Do not compromise.
 
-1. **Download Antigravity IDE**: Visit the official site at [antigravity.google](https://antigravity.google/). Download the dedicated Integrated Development Environment (IDE). Immediately.
-2. **Installation**: Follow the installation instructions specific to your operating system.
-3. **Account Activation**: Log in using your **Google/Gmail** account within the Antigravity IDE. This step is compulsory. It activates the full suite of intelligent assistant features we provide. Without a login, you are blind.
-4. **Initialize Workspace**: Open this Antigravity template folder as your primary workspace. Focus.
-5. **Verify Compass**: Ensure the `system-index.md` file is visible in the root folder. Navigation is key. Remember that.
+1. **Get the Blueprint**: 
+   - **Simple Option**: Click the green **Code** button at the top of this page and select **Download ZIP**. Extract it to your Desktop.
+   - **CLI Option**: Run `git clone https://github.com/reimajinasi/antigravity-template.git` in your terminal.
+2. **Download Antigravity IDE**: Visit the official site at [antigravity.google](https://antigravity.google/). Download the dedicated Integrated Development Environment (IDE). Immediately.
+3. **Installation**: Follow the installation instructions specific to your operating system.
+4. **Account Activation**: Log in using your **Google/Gmail** account within the Antigravity IDE. This step is compulsory. It activates the full suite of intelligent assistant features we provide. Without a login, you are blind.
+5. **Initialize Workspace**: Open this Antigravity template folder as your primary workspace. Focus.
+6. **Verify Compass**: Ensure the `system-index.md` file is visible in the root folder. Navigation is key. Remember that.
 
 ---
 

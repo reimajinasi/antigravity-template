@@ -10,11 +10,14 @@ Paham? Bagus. Mari kita mulai.
 
 Lingkungan kerja yang tepat adalah mutlak. Protokol Antigravity menuntut dukungan penuh. Jangan kompromi.
 
-1. **Unduh IDE Antigravity**: Kunjungi situs resmi di [antigravity.google](https://antigravity.google/). Unduh Integrated Development Environment (IDE) khusus tersebut. Segera.
-2. **Instalasi**: Jalankan instruksi instalasi sesuai sistem operasi Anda.
-3. **Aktivasi Akun**: Masuk menggunakan akun **Google/Gmail** Anda ke dalam IDE Antigravity. Langkah ini wajib. Tujuannya untuk mengaktifkan seluruh fitur asisten cerdas yang kami sediakan. Tanpa login, Anda buta.
-4. **Inisialisasi Workspace**: Buka folder template Antigravity ini sebagai ruang kerja utama. Fokus.
-5. **Verifikasi Kompas**: Pastikan file `system-index.md` terbaca di root folder. Navigasi adalah kunci. Camkan itu.
+1. **Ambil Proyek Ini**: 
+   - **Cara Mudah**: Klik tombol hijau **Code** di bagian atas halaman ini, lalu pilih **Download ZIP**. Ekstrak filenya di Desktop Anda.
+   - **Cara Teknisi**: Jalankan `git clone https://github.com/reimajinasi/antigravity-template.git` di terminal Anda.
+2. **Unduh IDE Antigravity**: Kunjungi situs resmi di [antigravity.google](https://antigravity.google/). Unduh Integrated Development Environment (IDE) khusus tersebut. Segera.
+3. **Instalasi**: Jalankan instruksi instalasi sesuai sistem operasi Anda.
+4. **Aktivasi Akun**: Masuk menggunakan akun **Google/Gmail** Anda ke dalam IDE Antigravity. Langkah ini wajib. Tujuannya untuk mengaktifkan seluruh fitur asisten cerdas yang kami sediakan. Tanpa login, Anda buta.
+5. **Inisialisasi Workspace**: Buka folder template Antigravity ini sebagai ruang kerja utama. Fokus.
+6. **Verifikasi Kompas**: Pastikan file `system-index.md` terbaca di root folder. Navigasi adalah kunci. Camkan itu.
 
 ---
 
